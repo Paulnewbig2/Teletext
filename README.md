@@ -1,39 +1,39 @@
-# Videotext
+# Teletext
 
-BetterDiscord-Theme im Stil von Videotext. Kanäle werden zu Seiten ab 100, der Kanaltitel steht in doppelter Höhe, alles in den acht Teletext-Farben und der Teletext-Schrift Bedstead.
+A BetterDiscord theme in the style of teletext. Channels become pages numbered from 100, the channel title is set in double height, and everything uses the eight teletext colors and the teletext font Bedstead.
 
-## Was sich ändert
+## What changes
 
-- Kanalliste: Jeder Kanal bekommt eine Seitennummer ab 100, Threads bleiben ohne Nummer.
-- Gewählter Kanal gelb auf blauem Balken, ungelesene Kanäle weiß, stummgeschaltete blau.
-- Kanaltitel gelb in doppelter Höhe, wie der Titel einer Videotext-Seite.
-- Namen grün, Zeitstempel cyan, Nachrichtentext weiß.
-- Nachrichten, die dich erwähnen, haben einen magentafarbenen Rand; die Erwähnung selbst steht schwarz auf Magenta.
-- Zähler für Erwähnungen blinken wie die Blinkschrift im Videotext.
-- Keine abgerundeten Ecken, keine Übergänge, Eingabefeld blau.
+- Channel list: every channel gets a page number starting at 100. Threads have no number.
+- The selected channel is yellow on a blue bar, unread channels are white, muted channels are blue.
+- The channel title is yellow and double height, like the title of a teletext page.
+- Names are green, timestamps cyan, message text white.
+- Messages that mention you have a magenta edge, and the mention itself is black on magenta.
+- Mention counters flash on and off, as flashing text did on teletext.
+- No rounded corners, no transitions, a blue message box.
 
 ## Installation
 
-1. `Videotext.theme.css` herunterladen.
-2. In Discord unter Einstellungen › BetterDiscord › Themes den Themes-Ordner öffnen und die Datei hineinlegen.
-3. Videotext in der Liste einschalten.
+1. Download `Teletext.theme.css`.
+2. In Discord, go to User Settings › BetterDiscord › Themes, open the themes folder and put the file in it.
+3. Turn on Teletext in the list.
 
-## Einstellungen
+## Settings
 
-Im `body`-Block am Anfang der Datei:
+In the `body` block near the top of the file:
 
-| Variable | Werte | Wirkung |
+| Variable | Values | Effect |
 | :- | :- | :- |
-| `--tt-rollenfarben` | `aus` (Standard), `an` | `an` zeigt Namen wieder in ihren Rollenfarben |
-| `--tt-blinken` | `an` (Standard), `aus` | `aus` stoppt das Blinken der Zähler |
+| `--tt-role-colors` | `off` (default), `on` | `on` shows names in their role colors again |
+| `--tt-flash` | `on` (default), `off` | `off` stops the counters from flashing |
 
-Sind in Windows die Animationseffekte ausgeschaltet, blinkt nichts.
+Nothing flashes while reduced motion is on, either in Discord's accessibility settings or in your operating system.
 
-## Grundlage
+## Based on
 
-- Die Zuordnung der Farben auf Discords Oberfläche kommt aus [midnight](https://github.com/refact0r/midnight-discord) von refact0r (MIT). Das Theme lädt midnight beim Start von refact0r.github.io; midnight bindet dabei eine Schrift von Google Fonts ein.
-- Schrift: [Bedstead](https://bjh21.me.uk/bedstead/) von Ben Harris, gemeinfrei. Eingebettet ist eine Teilmenge mit Latein, Umlauten, Satzzeichen und Teletext-Mosaikzeichen.
+- The mapping of colors onto Discord's interface comes from [midnight](https://github.com/refact0r/midnight-discord) by refact0r (MIT). The theme loads midnight from refact0r.github.io at startup, and midnight loads a font from Google Fonts.
+- Font: [Bedstead](https://bjh21.me.uk/bedstead/) by Ben Harris, public domain. The embedded subset covers Latin letters with accents (Latin-1 and Latin Extended-A), punctuation and the teletext mosaic characters.
 
-## Lizenz
+## License
 
-MIT, siehe [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
